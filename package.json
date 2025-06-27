@@ -1,19 +1,28 @@
 {
-  "name": "edu",
+  "name": "backend",
   "version": "1.0.0",
-  "private": true,
+  "main": "index.js",
+  "type": "commonjs",
   "scripts": {
-    "frontend": "cd frontend && npm start",
-    "backend": "cd backend && npm start",
-    "build": "npm install && npm install --prefix frontend && npm run build --prefix frontend",
-    "dev": "npm run backend"
+    "start": "node balanced/index.js",
+    "dev": "node backend/index.js",
+    "build": "npm install && npm install --prefix frontend && npm run build --prefix frontend"
   },
   "keywords": [],
   "author": "",
-  "devDependencies": {
-    "concurrently": "^8.2.2"
-  },
+  "license": "ISC",
+  "description": "",
   "dependencies": {
-    "express": "^5.1.0"
+    "bcryptjs": "^3.0.2",
+    "cloudinary": "^1.41.3",
+    "cloudinary-react": "^1.8.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.16.0",
+    "multer": "^2.0.1",
+    "multer-storage-cloudinary": "^4.0.0",
+    "nodemon": "^3.1.10"
   }
 }
