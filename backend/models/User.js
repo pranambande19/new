@@ -8,8 +8,8 @@ const userSchema = new mongoose.Schema({
   address: String,
   mobile: String,
   profilePic: {
-    data: Buffer,
-    contentType: String,
+    type: String,
+    default: "",
   },
 });
 
