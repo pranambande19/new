@@ -13,7 +13,7 @@ export default function Signup() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    await axios.post("http://localhost:5000/api/users/signup", form);
+    await axios.post("https://new-13vf.onrender.com/api/users/signup", form);
     navigate("/login");
   };
 

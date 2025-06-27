@@ -10,7 +10,7 @@ export default function Profile() {
   const fetchProfile = useCallback(async () => {
     try {
       const token = localStorage.getItem("token");
-      const res = await axios.get("http://localhost:5000/api/users/profile", {
+      const res = await axios.get("https://new-13vf.onrender.com/api/users/profile", {
         headers: { Authorization: `Bearer ${token}` },
       });
       setUser(res.data);
@@ -24,7 +24,7 @@ export default function Profile() {
     try {
       const token = localStorage.getItem("token");
       const res = await axios.put(
-        "http://localhost:5000/api/users/profile",
+        "https://new-13vf.onrender.com/api/users/profile",
         {
           name: user?.name,
           gender: user?.gender,
@@ -52,7 +52,7 @@ export default function Profile() {
 
       try {
         const token = localStorage.getItem("token");
-        const res = await axios.put("http://localhost:5000/api/users/profile-pic", formData, {
+        const res = await axios.put("https://new-13vf.onrender.com/api/users/profile-pic", formData, {
           headers: {
             Authorization: `Bearer ${token}`,
             "Content-Type": "multipart/form-data",
@@ -71,7 +71,7 @@ export default function Profile() {
     try {
       const token = localStorage.getItem("token");
       await axios.put(
-        "http://localhost:5000/api/users/profilepic",
+        "https://new-13vf.onrender.com/api/users/profilepic",
         { profilePic: "" },
         {
           headers: { Authorization: `Bearer ${token}` },

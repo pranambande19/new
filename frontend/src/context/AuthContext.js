@@ -19,7 +19,7 @@ export const AuthProvider = ({ children }) => {
     }
 
     try {
-      const res = await axios.get('http://localhost:5000/api/users/profile', {
+      const res = await axios.get('https://new-13vf.onrender.com/api/users/profile', {
         headers: {
           Authorization: `Bearer ${token}`,
         },

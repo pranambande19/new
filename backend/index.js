@@ -9,7 +9,7 @@ dotenv.config();
 const app = express();
 // const __dirname = path.resolve();   
 app.use(cors({
-  origin: 'http://localhost:3000',
+  origin: 'https://new-13vf.onrender.com',
   credentials: true
 }));
 app.use(express.json());

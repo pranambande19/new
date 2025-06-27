@@ -12,7 +12,7 @@ const Login = () => {
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post('http://localhost:5000/api/users/login', {
+      const res = await axios.post('https://new-13vf.onrender.com/api/users/login', {
         email,
         password,
       });
